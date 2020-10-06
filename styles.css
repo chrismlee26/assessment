@@ -1,0 +1,58 @@
+/* 
+
+Your name and the input elements on the left and 
+the headline display and code output on the right. */
+
+
+
+
+body {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#column1 {
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+#data-input {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-color: black
+}
+
+#column2 {
+    display: flex;
+    flex-direction: column;    
+}
+
+#headline-display {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-color: black
+}
+
+
+
+
+/* 
+#background-color, 
+font-family
+font-size 
+of the #display text, and display these values in the mockedup CSS code in 
+the #data-display section. */
+
+
+
+
+
+
+
+
+
+

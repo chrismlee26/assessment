@@ -2,35 +2,53 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>
             Chris Lee - Final - Web 1.0
         </title>
     </head>
     <body>
 
+        <div id=column1>
+            <div id="student-info">
+                <h1>Chris Lee</h1>
+                <p> My favorite color is black and I wear Common Projects!</p>  
+            </div>
+            <div id="data-input">
+                <h1> "Font Styler"</h1>
+                <input id="input-size" name="Font Size" type=number placeholder="Enter Font Size">
+                </input>
+                <select id="select-font" name="Font Family">
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                </input>
 
-        <div id="student-info">
-            <h1> With your name</h1>
-            <p> My favorite color is black and I wear Common Projects</p>  
+                <input id="input-color" name="Font Color" type=color value=#000>
+                </input>
+
+                <input id="input-bg-color" name="Background Color" type=color value=#fff>
+                </input>
+
+                <input id="enter-text" name="Enter Text" placeholder="Enter Text">
+                </input>
+            </div>
         </div>
-        <div id="data-input">
-            <h1> "Font Styler"</h1>
-            <input id="Font Size" type=number>
-            Font Family
-            Font Color
-            Background Color
-            Enter Text
 
-
-
-
-
-        </div>
-
-        <div id="headline-display">
-        </div>
-
-        <div id="data-output">
+        <div id=column2>
+            <div id="headline-display">
+                <h1 id="display">Sample Text</h1>
+            </div>
+            <div id="data-output">
+                <h1>Font Settings</h1>
+                <pre><code>.headline {
+                    font-size: <span id="show-size">16</span>px;
+                    font-family: <span id="show-font">Times</span>;
+                    color: <span id="show-color">#000</span>;
+                    background-color: <span id="show-bg-color">#fff</span>;
+                }</code></pre>
+            </div>
         </div>
     </body>
 </html>
