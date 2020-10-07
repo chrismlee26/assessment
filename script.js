@@ -3,30 +3,40 @@
 // the #data-display section.
 
 
-
-
-const display = document.querySelector('#display')
+const display = document.querySelector('#headline-display')
 const inputSize = document.querySelector('#input-size')
 const showSize = document.querySelector('#show-size')
 const selectFont = document.querySelector('#select-font')
+const showFont = document.querySelector('#show-font')
 const inputColor = document.querySelector('#input-color')
 const inputbgColor = document.querySelector('#input-bg-color')
 
 inputSize.addEventListener('input', handleInput)
-display.addEventListener('input', newText)
+selectFont.addEventListener('input', fontInput)
+
 
 function handleInput() {
-	const fontSize = inputSize.value + 'px'
+	const fontSize = inputSize.value
 	display.style.fontSize = fontSize
-    showSize.innerHTML = fontSize
+    showSize.innerHTML = fontSize   
+}
+
+function fontInput() {
+    const fontType = selectFont.value
+    display.style.fontFamily = selectFont.value
+    showFont.innerHTML = fontType
+}
+
+function changeColor() {
     
 }
 
-function newText() {
-    const newText = display.value
-    display.innerHTML = newText
+function changeBgColor() {
+
 
 }
+
+
 
 
 // You need to repeat the process for the other properties:
