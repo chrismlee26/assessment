@@ -1,21 +1,11 @@
-/* 
-
-Your name and the input elements on the left and 
-the headline display and code output on the right. */
-
-
-
-
 body {
     display: flex;
-    /* flex-direction: column; */
 }
 
 #column1 {
     display: flex;
     flex-direction: column;
     padding: 20px;
-
 }
 
 #data-input {
@@ -39,4 +29,6 @@ body {
     padding: 20px;
 }
 
-
+p.arial {
+    font-family: Arial;
+}
