@@ -14,7 +14,7 @@ body {
 #column1 {
     display: flex;
     flex-direction: column;
-  
+    padding: 20px;
 
 }
 
@@ -22,30 +22,39 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    border-color: black
+    padding: 10px;
+
 }
 
 #column2 {
     display: flex;
     flex-direction: column;    
+    padding: 20px;
 }
 
 #headline-display {
     display: flex;
     justify-content: center;
     border: 2px solid black;
-    border-color: black
+    padding: 20px;
 }
 
+#data-output
 
+#data-display
 
 
 /* 
-#background-color, 
+
+#data-display
+
+background-color, 
 font-family
 font-size 
-of the #display text, and display these values in the mockedup CSS code in 
-the #data-display section. */
+display these values in the mockedup CSS code in 
+the #data-display section. 
+
+*/
 
 
 

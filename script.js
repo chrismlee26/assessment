@@ -1,27 +1,27 @@
-Your goal is to set the color, background-color, font-family, and font-size 
-of the #display text, and display these values in the mockedup CSS code in 
-the #data-display section.
+// Your goal is to set the color, background-color, font-family, and font-size 
+// of the #display text, and display these values in the mockedup CSS code in 
+// the #data-display section.
 
 
 
-// The headline element
+
 const display = document.querySelector('#display')
-
-// The input field for size
 const inputSize = document.querySelector('#input-size')
-// The element that displays the value 
 const showSize = document.querySelector('#show-size')
-// Repeat this for the input and "show" elements
+const selectFont = document.querySelector('#select-font')
+const inputColor = document.querySelector('#input-color')
+const inputbgColor = document.querySelector('#input-bg-color')
 
 inputSize.addEventListener('input', handleInput)
+display.addEventListener('input', handleInput)
 
 function handleInput() {
-	// get the font size:
 	const fontSize = inputSize.value + 'px'
-	// Set the style 
 	display.style.fontSize = fontSize
-	// Show the size
-	showSize.innerHTML = fontSize
+    showSize.innerHTML = fontSize
+    
+    document.getElementById("display").innerHTML = display
+
 }
 
 
@@ -45,3 +45,16 @@ function handleInput() {
 // background-color 
 // and the values entered should change the appearance of the headline 
 // element, and show the CSS code that might be used to create this headline.
+
+
+
+
+// #data-display
+
+// background-color, 
+// font-family
+// font-size 
+// display these values in the mockedup CSS code in 
+// the #data-display section. 
+
+
