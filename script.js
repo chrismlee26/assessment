@@ -13,18 +13,20 @@ const inputColor = document.querySelector('#input-color')
 const inputbgColor = document.querySelector('#input-bg-color')
 
 inputSize.addEventListener('input', handleInput)
-display.addEventListener('input', handleInput)
+display.addEventListener('input', newText)
 
 function handleInput() {
 	const fontSize = inputSize.value + 'px'
 	display.style.fontSize = fontSize
     showSize.innerHTML = fontSize
     
-    document.getElementById("display").innerHTML = display
-
 }
 
+function newText() {
+    const newText = display.value
+    display.innerHTML = newText
 
+}
 
 
 // You need to repeat the process for the other properties:
